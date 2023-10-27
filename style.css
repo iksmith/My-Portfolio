@@ -19,9 +19,14 @@ html {
     margin-left: 17.5%;
     margin-right: 17.5%;
     margin-bottom: 1rem;
+    marging-top: 1rem;
+    background-color: white;
+    border-radius: 5rem;
+    padding: 1rem 2rem;
 }
 
-.logo-name {
+
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,14 +35,35 @@ html {
     font-weight: bold;
     color: #212121;
 }
-.about-btn, .experience-btn {
-    cursor: pointer;
+
+.page-name {
+    text-decoration: none;
     color: #212121;
-    background-color: transparent;
-    font-weight: 500;
+    font-size: larger;
+    transition: ease-in-out .2s;
+}
+
+.nav-btns {
+    display: flex;
+    align-items: center;
+}
+
+.about-btn, .resume-btn {
+    cursor: pointer;
+    color: white;
+    background-color: #212121;
+    font-weight: 700;
     border: 1px solid #212121;
-    border-radius: 25px;
-    padding: .25rem 1rem
+    border-radius: 10rem;
+    padding: .5rem 1rem;
+    margin-left: .5rem;
+    transition: ease-in-out 0.2s;
+}
+
+.about-btn:hover, .resume-btn:hover {
+    font-weight: bold;
+    color: black;
+    background-color: transparent;
 }
 
 .side-nav {
@@ -47,7 +73,7 @@ html {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: black;
+    background-color: #212121;
     padding-top: 25%;
     transition: 0.5s;
 }
@@ -64,21 +90,116 @@ html {
 .main {
     margin-left: 17.5%;
     margin-right: 17.5%;
-    padding-top: 5.5rem;
+    padding-top: 3rem;
+    background-color: transparent;
+    height: 50%;
+    border-radius: 1rem;
 }
+
 
 .hero-headline {
     font-size: larger;
     font-weight: 600;
+    transition: ease-in-out .2s;
+}
+
+.tag {
+    /* cursor: pointer; */
+    text-decoration: none;
+    color: black;
+    margin-bottom: .5rem;
+    border: solid .1rem black;
+    border-radius: 1rem;
+    padding: .3rem .75rem;
+}
+
+/* Tag Section */
+.tag {
+    border: none;
+}
+
+#fullstack-web-developer {
+    background-color: #00b5fd6e;
+    transition: ease-in-out .2s;
+}
+
+#fullstack-web-developer:hover{
+    background-color: #34B3F1;
+}
+
+#startups {
+    background-color: #9046ff88;
+}
+#startups:hover {
+    background-color: #9146FF;
+}
+
+#product-manager {
+    background-color: #34f15d7a;
+}
+
+#product-manager:hover {
+    background-color: #34f15d;
+}
+
+#gaming-enthusiast {
+    background-color: #f1551277;
+}
+
+#gaming-enthusiast:hover {
+    background-color: #f15512;
 }
 
 .contact-btn {
     cursor: pointer;
-    background-color: transparent;
-    border: 1px solid #212121;
-    border-radius: 25px;
+    color: white;
+    background-color: #212121;
+    border: none;
+    border-radius: .5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     padding: .75rem 1rem;
     font-size: larger;
     font-weight: bold;
+    transition: ease-in-out 0.2s;
 }
+
+.contact-btn:hover {
+    color: black;
+    background-color: transparent;
+    border: .125rem solid black;
+}
+
+.case-study-section {
+    background-color: white;
+    height: 15rem;
+    margin-bottom: 2rem;
+    padding-top: .5rem;
+    padding-left: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: left;
+    transition: ease-in-out .2s;
+}
+
+
+/* Phones/Mobile media query */
+@media only screen and (max-width: 650px) {
+    #btn {
+        font-size: smaller;
+    }
+
+    .page-name {
+        font-size: .75rem;
+    }
+
+    #section-title {
+        font-size: medium;
+    }
+
+    .hero-headline {
+        font-size: medium;
+    }
+}
+
 
