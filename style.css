@@ -134,11 +134,11 @@ html {
     background-color: #9146FF;
 }
 
-#product-manager {
+#product-management {
     background-color: #34f15d7a;
 }
 
-#product-manager:hover {
+#product-management:hover {
     background-color: #34f15d;
 }
 
@@ -184,7 +184,7 @@ html {
 
 
 /* Phones/Mobile media query */
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) {
     #btn {
         font-size: smaller;
     }
@@ -199,6 +199,10 @@ html {
 
     .hero-headline {
         font-size: medium;
+    }
+
+    .about-btn, .resume-btn {
+        font-size: small;
     }
 }
 
